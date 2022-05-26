@@ -1,0 +1,20 @@
+---
+# tasks file for dck-wordpress
+- name: Create directory ansible
+  file:
+    path: /home/sysadmin/wordpress
+    state: directory
+    mode: "u=rwx,g=rx,o=rx"
+
+- name: Copy file
+  copy:
+    src: "docker-compose.yml"
+    dest: "/home/sysadmin/wordpress/docker-compose.yml"
+    owner: "sysadmin"
+    group: "sysadmin"
+    mode: 0644
+
+- name: Run docker compose
+  command: "docker-compose up -d"
+  args:
+    chdir: "/home/sysadmin/wordpress"
