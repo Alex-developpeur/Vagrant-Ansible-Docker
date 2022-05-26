@@ -14,6 +14,14 @@
     group: "sysadmin"
     mode: 0644
 
+- name: Copy file
+  copy:
+    src: ".env"
+    dest: "/home/sysadmin/wordpress/.env"
+    owner: "sysadmin"
+    group: "sysadmin"
+    mode: 0644
+
 - name: Run docker compose
   command: "docker-compose up -d"
   args:
