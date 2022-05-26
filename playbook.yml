@@ -17,7 +17,7 @@
         group: "{{ item.group }}"
         mode: 0644
       with_items:
-        - src: "/vagrant/config"
+        - src: "/vagrant/roles"
           dest: "/home/vagrant/"
           owner: vagrant
           group: vagrant
