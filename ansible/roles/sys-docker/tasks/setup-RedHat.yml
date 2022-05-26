@@ -1,15 +1,9 @@
 ---
-- name: Print the gateway for each host when defined
-  ansible.builtin.debug:
-    msg: System {{ ansible_os_family }}
-
 - name: Ensure old versions of Docker are not installed.
   package:
-    name:
-      - docker
-      - docker-common
-      - docker-engine
+    name: "{{ item }}"
     state: absent
+  loop: "{{ docker }}"
 
 - name: Add Docker GPG key.
   rpm_key:
