@@ -1,7 +1,8 @@
 # vagrant ansible docker
 
-## TP : Construction et manipulation de rôle
+## Cahier des charges
 
+### TP : Construction et manipulation de rôle
 Objectif : Construire ses propres **rôles** pour déployer un **wordpress** sous **docker**  
 Travail d'équipe : oui  
 Besoin :
@@ -16,3 +17,19 @@ Besoin :
 Rendu :
 - Versionner votre code dans un projet **GitLab**
 - Documenter son usage dans un document **README.md**
+
+## Réalisation
+- Création d'un fichier **Vagrantfile** avec une image **Debian**.
+```bash
+vagrant up
+```
+- Création des roles ansible
+```bash
+sudo ansible-galaxy init sys-common
+sudo ansible-galaxy init sys-docker
+sudo ansible-galaxy init dck-wordpress
+```
+- Création du playbook **deploy.yml**
+```bash
+sudo ansible-palybook deploy.yml
+```
