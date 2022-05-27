@@ -3,9 +3,11 @@
 web01 ansible_ssh_host=192.168.44.10
 web02 ansible_ssh_host=192.168.44.11
 
+# Applications docker
 [doc]
 word01 ansible_ssh_host=192.168.44.20
 word02 ansible_ssh_host=192.168.44.21
+
 # Database servers
 [sql]
 sql01 ansible_ssh_host=192.168.44.15
