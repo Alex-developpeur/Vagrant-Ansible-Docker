@@ -1,6 +1,6 @@
 ---
 # git commit -m "ci/cd" --no-verify
-# run --all-files
+# pre-commit run --all-files
 repos:
   - repo: https://github.com/adrienverge/yamllint.git
     rev: v1.17.0
