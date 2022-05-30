@@ -8,12 +8,11 @@
 
 - name: Copy file.
   copy:
-    src: "{{ item }}"
-    dest: "/home/sysadmin/wordpress/{{ item }}"
+    src: "docker-compose.yml"
+    dest: "/home/sysadmin/wordpress/docker-compose.yml"
     owner: "sysadmin"
     group: "sysadmin"
     mode: 0644
-  loop: "{{ files }}"
 
 - name: Template a file, using symbolic modes (equivalent to 0644)
   template:
