@@ -3,13 +3,13 @@
   yum:
     name: '*'
     state: latest
-    update_cache: yes
-    update_only: yes
+    update_cache: true
+    update_only: true
   register: yum_update_status
 
 - name: Remove packates not needed anymore
   yum:
-    autoremove: yes
+    autoremove: true
 
   # - name: Reboot when packages were updated
   #  reboot:
