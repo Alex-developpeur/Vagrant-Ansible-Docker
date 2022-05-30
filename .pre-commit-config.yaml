@@ -5,4 +5,4 @@ repos:
     hooks:
       - id: yamllint
         # args: [-c=C:\vagrant\Ansible\vagrant-ansible-docker\.yamllint]
-        args: [-c=/mnt/c/vagrant/Ansible/vagrant-ansible-docker/.config/.yamllint]
+        args: [-c=/mnt/c/vagrant/Ansible/vagrant-ansible-docker/.yamllint]
