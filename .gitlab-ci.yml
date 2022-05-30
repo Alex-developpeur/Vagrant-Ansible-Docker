@@ -8,3 +8,9 @@ ansible-lint:
   stage: linting
   script:
     - ansible-lint --force-color -p *
+
+yamllint:
+  image: sdesbure/yamllint
+  stage: linting
+  script:
+    - yamllint .
