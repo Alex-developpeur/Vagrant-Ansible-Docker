@@ -5,12 +5,12 @@
   tasks:
 
     - name: Install vim
-      apt:
+      ansible.builtin.apt:
         name: vim
         state: present
 
     - name: Copy file
-      copy:
+      ansible.builtin.copy:
         src: "{{ item.src }}"
         dest: "{{ item.dest }}"
         owner: "{{ item.owner }}"

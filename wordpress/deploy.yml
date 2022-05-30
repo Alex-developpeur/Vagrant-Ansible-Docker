@@ -2,6 +2,6 @@
 - hosts: doc
   become: true
   roles:
-    - sys-common
-    - sys-docker
-    - dck-wordpress
+    - sys_common
+    - sys_docker
+    - dck_wordpress

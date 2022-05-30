@@ -1,6 +1,0 @@
----
-# defaults file for dck-wordpress
-files: [
-  "docker-compose.yml",
-  ".env"
-]
