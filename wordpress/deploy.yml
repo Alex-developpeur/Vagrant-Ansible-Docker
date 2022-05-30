@@ -1,6 +1,6 @@
 ---
 - hosts: doc
-  become: yes
+  become: true
   roles:
     - sys-common
     - sys-docker

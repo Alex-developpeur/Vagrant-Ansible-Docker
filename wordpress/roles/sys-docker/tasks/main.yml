@@ -9,7 +9,7 @@
   package:
     name: "{{ item }}"
     state: "{{ docker_package_state }}"
-    update_cache: yes
+    update_cache: true
   loop: "{{ docker }}"
 
 - name: Ensure Docker is started and enabled at boot.

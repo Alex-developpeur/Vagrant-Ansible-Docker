@@ -1,10 +1,10 @@
 ---
 # dependencies
 dependencies: [
-    "ca-certificates",
-    "curl",
-    "gnupg",
-    "lsb-release"
+  "ca-certificates",
+  "curl",
+  "gnupg",
+  "lsb-release"
 ]
 
 # Edition can be one of: 'ce' (Community Edition) or 'ee' (Enterprise Edition).
