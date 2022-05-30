@@ -1,0 +1,10 @@
+---
+
+stages:
+  - linting
+
+ansible-lint:
+  image: quay.io/ansible/creator-ee:latest
+  stage: linting
+  script:
+    - ansible-lint --force-color -p *

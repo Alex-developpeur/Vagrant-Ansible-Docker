@@ -1,1 +1,8 @@
 ---
+repos:
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.17.0
+    hooks:
+      - id: yamllint
+        # args: [-c=C:\vagrant\Ansible\vagrant-ansible-docker\.yamllint]
+        args: [-c=/mnt/c/vagrant/Ansible/vagrant-ansible-docker/.yamllint]
