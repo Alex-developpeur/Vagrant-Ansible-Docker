@@ -1,3 +1,7 @@
 .vagrant
 data
 *.env
+*/group_vars/*
+!*/group_vars/.gitkeep
+!*/group_vars/all.yml.example
+

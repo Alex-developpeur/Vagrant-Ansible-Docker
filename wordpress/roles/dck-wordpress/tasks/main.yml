@@ -6,7 +6,7 @@
     state: directory
     mode: "u=rwx,g=rx,o=rx"
 
-- name: install docker
+- name: Copy file.
   copy:
     src: "{{ item }}"
     dest: "/home/sysadmin/wordpress/{{ item }}"
@@ -14,6 +14,14 @@
     group: "sysadmin"
     mode: 0644
   loop: "{{ files }}"
+
+- name: Template a file, using symbolic modes (equivalent to 0644)
+  template:
+    src: templates/.env.j2
+    dest: "/home/sysadmin/wordpress/.env"
+    owner: sysadmin
+    group: sysadmin
+    mode: u=rw,g=r,o=r
 
 # sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 - name: Run docker compose
