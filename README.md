@@ -35,7 +35,7 @@ sudo ansible-palybook deploy.yml
 ```
 
 ## Cahier des charges
-
+test
 ### TP : Configurer un projet git ansible
 Objectif : Améliorer le projet Git ansible  
 Travail d'équipe : semi  
