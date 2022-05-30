@@ -33,3 +33,24 @@ sudo ansible-galaxy init dck-wordpress
 ```bash
 sudo ansible-palybook deploy.yml
 ```
+
+## Cahier des charges
+
+### TP : Configurer un projet git ansible
+Objectif : Améliorer le projet Git ansible  
+Travail d'équipe : semi  
+Besoin :
+- Découvrir la notion de pre-commit
+- **Ajouter** un fichier .pre-commit-config.
+* yaml pour :
+  * vérifier la syntax yaml --> yamllint
+  * vérifier ansible --> ansible-lint
+* Ajouter une intégration continue avec 2 jobs :
+  * ansible_lint
+  * yaml_lint
+
+Rendu :
+- Versionner votre code dans un projet GitLab
+- Documenter son usage dans un document README.md
+
+## Réalisation
