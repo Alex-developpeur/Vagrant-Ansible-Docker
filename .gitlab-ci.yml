@@ -13,4 +13,4 @@ yamllint:
   image: sdesbure/yamllint
   stage: linting
   script:
-    - yamllint .
+    - yamllint --force-color .
