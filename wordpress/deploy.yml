@@ -1,5 +1,5 @@
 ---
-- hosts: doc
+- hosts: word01
   become: true
   roles:
     - sys_common
