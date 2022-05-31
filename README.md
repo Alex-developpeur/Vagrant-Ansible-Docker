@@ -1,7 +1,7 @@
 # vagrant ansible docker
 
 ## Cahier des charges
-test
+
 ### TP : Construction et manipulation de rôle
 Objectif : Construire ses propres **rôles** pour déployer un **wordpress** sous **docker**  
 Travail d'équipe : oui  
