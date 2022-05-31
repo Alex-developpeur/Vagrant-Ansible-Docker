@@ -58,5 +58,5 @@ Rendu :
   * Création du fichier **.ansible-lint** pour les règles de vérification des fichiers **ansible**.
   * Création du fichier **.yamllint** pour les règles de vérification des fichiers **yaml**.
 * Création du fichier **.gitlab-ci.yml** pour le lancement des vérifications des fichiers **yaml** côté serveur.
-  * Avec l'image **quay.io/ansible/creator-ee:latest** pour les vérifications **ansible**.
-  * Avec l'image **sdesbure/yamllint** pour les vérifications **yaml**
+  * Implémentation de l'image **quay.io/ansible/creator-ee:latest** pour les vérifications **ansible**.
+  * Implémentation de **sdesbure/yamllint** pour les vérifications **yaml**
