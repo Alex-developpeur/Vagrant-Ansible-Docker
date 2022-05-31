@@ -6,7 +6,7 @@ repos:
     rev: v1.17.0
     hooks:
       - id: yamllint
-        args: ["-c=/mnt/c/vagrant/Ansible/vagrant-ansible-docker/.config/.yamllint", "."]
+        args: ["-c=/mnt/c/vagrant/Ansible/vagrant-ansible-docker/.yamllint", "."]
 
   - repo: https://github.com/ansible-community/ansible-lint.git
     rev: v6.2.2
